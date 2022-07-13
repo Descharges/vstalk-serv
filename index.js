@@ -119,4 +119,4 @@ app.ws('/', (ws, req) => {
 
 })
 
-app.listen(8080);
+app.listen(80);
