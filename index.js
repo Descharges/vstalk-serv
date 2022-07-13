@@ -4,6 +4,8 @@ const app = express();
 
 const expressWs = require('express-ws')(app)
 
+const port = process.env.PORT || 80
+
 var nextId = 0;
 
 var waiting = [];
@@ -119,4 +121,4 @@ app.ws('/', (ws, req) => {
 
 })
 
-app.listen(80);
+app.listen(port);
